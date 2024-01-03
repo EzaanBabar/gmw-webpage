@@ -117,7 +117,7 @@
         </div>
           <div class="vehicle_description_container">
           <p class = vehicle_description >At GMW we take pride in servicing your German Vehicle. We are experts
-            at providing service for the following automobile manufactors:<span class = "color_accent"> Mercedes, Bentley, Audi, BMW, Porshe, 
+            at providing service for the following automobile manufactors:<span class = "color_accent"> Mercedes, Bentley, Audi, BMW, Porcshe, 
             Volkswagen, and Mini.</span>
           </p>
         </div>
@@ -126,7 +126,36 @@
     </div>
   </section>
 
+  <section id ="contact" class="contact">
 
+    <div class="contact_section_container">
+      <div class="contact_row">
+        <div class="contact_title_container">
+      <h3 class="contact_title">Contact Us</h3>
+     </div>
+   
+    <div class="contact_form_container">
+    <form id="contact__form" onsubmit="contact(event)">
+      <div class="form__item">
+        <label class="form__item--label">Name</label>
+        <input class="input" name="user_name" type="text" required></input>
+      </div>
+      <div class="form__item">
+        <label class="form__item--label">Email</label>
+        <input class="input" name="user_email" type="email" required></input>
+      </div>
+      <div class="form__item">
+        <label class="form__item--label">Message</label>
+        <textarea class="input" name="message" type="text" required></textarea>
+      </div>
+      <button id="contact__submit" class="form__submit">
+        Send it my way
+      </button>
+    </div>
+    </div>
+  </div>
+  </section>
+  
   <footer>
     <div class="footer_text">2024 German Motor Works</div>
   </footer>

@@ -185,7 +185,7 @@ section.services{
 }
 
 
-h3.services_page_title{
+h3.services_page_title, h3.contact_title{
   font-size:30px;
   padding-top:0px;
   color:rgb(0, 0, 0);
@@ -294,11 +294,42 @@ h3.services_page_title{
 }
 
 
+/* Contact Section */
+.contact_section_container{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+}
+.contact_row{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.contact_form_container{
+  background-color: rgb(161, 42, 42);
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+label{
+  font-size: 20px;
+  font-weight:bold;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
 .vehicles_container{
  height:50vh;
  display: flex;
  justify-content: center;
-
 }
 
 .vehicles_row{
@@ -351,4 +382,5 @@ footer{
 .footer_text{
   color:rgb(0, 0, 0);
   font-family: 'Roboto Mono', monospace;
+  
 }
