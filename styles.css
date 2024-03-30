@@ -506,8 +506,8 @@ footer{
     width:300px;
   }
   li.nav_title{
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-size: 16px;
+    letter-spacing: 5px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
   }
@@ -640,7 +640,7 @@ p.about {
   }
  
   .contact_section_container{
-   
+    overflow: hidden;
   }
     
   .contact_form_container{
@@ -679,7 +679,7 @@ p.about {
   }
   
 }
-@media (max-width: 440px){
+@media (max-width: 420px){
 
 h1.header_title{
   font-size: 100px;
@@ -714,7 +714,7 @@ h1.header_title{
     justify-content: center;
     align-items: center;
     padding:30px;
-    width:340px;
+    width:350px;
   }
   .project__img{
     width: 320px;
@@ -733,10 +733,8 @@ h1.header_title{
   transition: 300ms;
 }
 .services_title{
-  font-size: 10px;
-  letter-spacing: 0px;
+  font-size: 19px;
 }
-
 .services_description{
   font-size:13px;
   margin-left:0px;
@@ -745,23 +743,11 @@ h3.vehicles_title{
   margin-top: 0px;
   margin-bottom:6px;
 }
-h3.contact_title{
-  font-size: 24px;
-  letter-spacing: 0.5px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
 .vehicle_description{
   margin-top: 3px;
 }
 .vehicles_container{
   height:60vh;
-}
-label{
-  font-size: 20px;
-  font-weight: 550;
-  font-family: "Poppins", sans-serif;
-  color:white;
 }
 
 }
