@@ -3,9 +3,21 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <title>German Motor Works</title>
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="icon" href="gmwflag.png">
+  <script src= "index.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("erSF0FY9uVXhbS4Ka");
+   })();
+</script>
+
+
 </head>
 
 <body>
@@ -25,33 +37,35 @@
   <header>
     <div class="header_container">
       <div class="header_row">
-        <h1 class="header_title"><span class="g">G</span><span class="g">M</span><span class="g">W</span></h1>
+        <h1 class="header_title"><span class="g">GMW</span><span class=""></span><span class="g"></span></h1>
         <div class="header_about">
           <p class="about">
-            WELCOME TO GERMAN MOTOR WORKS, WHERE WE TREAT YOUR GERMAN MACHINES
-            WITH LOVE AND CARE. EXPERIENCE TOP-NOTCH SERVICE FOR YOUR GERMAN
+            WELCOME TO GERMAN MOTOR WORKS, WHERE WE TREAT YOUR GERMAN/EXOTIC MACHINES
+            WITH LOVE AND CARE. EXPERIENCE TOP-NOTCH SERVICE FOR YOUR GERMAN AND EXOTIC
             VEHICLE.
           </p>
               <!--   WELCOME TO GERMAN MOTOR WORKS, WHERE WE TREAT YOUR GERMAN MACHINES
             WITH LOVE AND CARE. EXPERIENCE TOP-NOTCH SERVICE FOR YOUR GERMAN
             VEHICLE. -->
           <h2 class="address">1352 S PLANO RD, RICHARDSON, TX 75081</h2>
+
         </div>
         <div class="header_buttons">
          
+          <div class="buttons_container">
+            <a href="#services" class="header_services_button"><button>SERVICES</button></a>
+            <a href="#vehicles" class="header_services_button"><button>VEHICLES</button></a>
+            <a href="#vehicles" class="header_services_button"><button>CONTACT</button></a>
+      
 
-          <button class="header_book_button">BOOK A SERVICE</button>
-          <button class="header_book_button">VEHICLES</button>
-          
-          <a href="#services" class="header_services_button"><button>SERVICES</button></a>
-          
+        </div>
         </div>
       </div>
     </div>
-
-
+  <div class="img_container">
     <div class="header_img">
       <img src="gmw2.jpg" class="project__img" alt="">
+    </div> 
   </header>
 
 
@@ -71,7 +85,6 @@
               <img src="brakes.png" class="brakes_img" alt="">
             </div>
             </div>
-          
     
             <div class="services_oil">
               <h2 class="services_title"> Oil</h2>
@@ -116,9 +129,9 @@
           <h3 class="vehicles_title" >VEHICLES WE SERVICE</h3>
         </div>
           <div class="vehicle_description_container">
-          <p class = vehicle_description >At GMW we take pride in servicing your German Vehicle. We are experts
+          <p class = vehicle_description >At GMW we take pride in servicing your German and exotic vehicle. We are experts
             at providing service for the following automobile manufactors:<span class = "color_accent"> Mercedes, Bentley, Audi, BMW, Porcshe, 
-            Volkswagen, and Mini.</span>
+            Volkswagen, McLaren, Lamborghini, Ferrari, Maserati, Range Rover, Smart and Mini.</span>
           </p>
         </div>
       
@@ -131,33 +144,66 @@
     <div class="contact_section_container">
       <div class="contact_row">
         <div class="contact_title_container">
-      <h3 class="contact_title">Contact Us</h3>
+      <h3 class="contact_title">CONTACT</h3>
      </div>
    
     <div class="contact_form_container">
+      
     <form id="contact__form" onsubmit="contact(event)">
       <div class="form__item">
         <label class="form__item--label">Name</label>
         <input class="input" name="user_name" type="text" required></input>
       </div>
       <div class="form__item">
+        <label class="form__item--label">Phone</label>
+        <input class="input" name="user_phone" type="tel" required></input>
+      </div>
+      <div class="form__item">
         <label class="form__item--label">Email</label>
         <input class="input" name="user_email" type="email" required></input>
       </div>
       <div class="form__item">
+        <label class="form__item--label">Service</label>
+        <select id="services_options" name="user_service">
+          <option value="Brakes">Brakes</option>
+          <option value="Alignment">Alignment</option>
+          <option value="Maintenance">Maintenance</option>
+          <option value="Oil">Oil</option>
+          <option value="Diagnositcs">Diagnostics</option>
+          <option value="Air Conditioning">Air Conditioning</option>
+          <option value="Air Conditioning">Other</option>
+         </select>
+      </div>
+      <div class="form__item">
         <label class="form__item--label">Message</label>
-        <textarea class="input" name="message" type="text" required></textarea>
+        <input class="input_message" name="user_message" type="text"></input>
       </div>
       <button id="contact__submit" class="form__submit">
-        Send it my way
+        Schedule your service
       </button>
+      <div class="loader"></div>
+      
+     
+      </form>
+      <!-- <div class="success_container">
+      <h3 class="success_message">Your message has been sent! A German Motor Works service
+        advisor will be in contact with you as soon as possible.
+      </h3>
+    </div> -->
     </div>
     </div>
   </div>
+
   </section>
   
   <footer>
+    <div class="footer_container">
+    <div class="phone">972-690-6623</div>
+    <div class="email">gmwdallas@gmail.com </div>
+    <div class="hours">Mon-Fri 8:00AM - 6:00PM</div>
     <div class="footer_text">2024 German Motor Works</div>
+   
+  </div>
   </footer>
 </body>
 
